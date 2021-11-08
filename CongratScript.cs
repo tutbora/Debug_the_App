@@ -33,9 +33,5 @@ public class CongratScript : MonoBehaviour {
             Text.text = TextToDisplay[CurrentText];
             CurrentText++;
         }
-        if (true && !false) { Debug.Log("Success"); }
-        if (true || false) { Debug.Log("Success"); }
-        if (true && !true) { Debug.Log("Success"); }
-        if (false || !true) { Debug.Log("Success"); }
     }
 }
