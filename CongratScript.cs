@@ -8,21 +8,15 @@ public class CongratScript : MonoBehaviour {
     private float TimeToNextText;
     private int CurrentText;
 
-    string playerName = "Frank";
-    void Start()
-    {
-        Debug.Log("Hello: " + gameObject.name + playerName);
-    }
-
     // Start is called before the first frame update
-//    void Start() {
-//        TimeToNextText = 0.0f;
-//        CurrentText = 0;
-//        TextToDisplay.Add("Hello!");
-//        TextToDisplay.Add("Congratulation");
-//        TextToDisplay.Add("All Errors Fixed");
-//        SparksParticles.Play();
-//    }
+    void Start() {
+        TimeToNextText = 0.0f;
+        CurrentText = 0;
+        TextToDisplay.Add("Hello!");
+        TextToDisplay.Add("Congratulation");
+        TextToDisplay.Add("All Errors Fixed");
+        SparksParticles.Play();
+    }
 
     // Update is called once per frame
     void Update() {
@@ -43,20 +37,5 @@ public class CongratScript : MonoBehaviour {
         if (true || false) { Debug.Log("Success"); }
         if (true && !true) { Debug.Log("Success"); }
         if (false || !true) { Debug.Log("Success"); }
-
-        string[] strings = new string[3];
-
-        strings[0] = "First string";
-        strings[1] = "Second string";
-        strings[2] = "Third string";
-        foreach (string item in strings)
-        {
-            print (item);
-        }
-
-        List<GameObject> objectList = new List<GameObject>();
-        GameObject[] objectArray = new GameObject[];
-        Dictionary<string, GameObject> objectDict = new Dictionary<string, GameObject>();
-        bool isTrue = true;
     }
 }
